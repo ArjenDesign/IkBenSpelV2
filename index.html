@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vraag 1</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+		 <script type = "text/javascript">
+        
+            function WriteCookie() {
+			   Answer1Result = escape(document.quiz.hats.value) + ";"; 
+               document.cookie = "Answer1=" + Answer1Result + "path=/";
+			   document.forms["quiz"].submit();
+            }
+			 
+			 function ShowCookie() {
+  			 alert(document.cookie);
+			 }
+			 
+      	</script>      
+	
+</head>
+
+<body>
+<h1>Hoe stel je je vaak op in discussies?</h1>
+	
+<form action="q2.html" name = "quiz">
+
+<label>
+  <input type="radio" name="hats" value="green" checked>
+  <img src="images/__green.png" width="300" height="225">
+</label>
+
+<label>
+  <input type="radio" name="hats" value="blue" checked>
+  <img src="images/__blue.png" width="300" height="225">
+</label>
+
+<label>
+  <input type="radio" name="hats" value="yellow" checked>
+  <img src="images/__yellow.png" width="300" height="225">
+</label>
+
+<label>
+  <input type="radio" name="hats" value="red" checked>
+  <img src="images/__red.png" width="300" height="225">
+</label>
+
+<label>
+  <input type="radio" name="hats" value="white" checked>
+  <img src="images/__white.png" width="300" height="225">
+</label>
+
+<label>
+  <input type="radio" name="hats" value="black" checked>
+  <img src="images/__black.png" width="300" height="225">
+</label>
+	
+<div>
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+<button type="button" onclick="ShowCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+</div>
+
+</form>
+
+</body>
+</html>

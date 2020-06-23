@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vraag 2</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<script>
+	
+    var allcookies = document.cookie;
+               document.write ("All Cookies : " + allcookies );
+               
+               // Get all the cookies pairs in an array
+               cookiearray = allcookies.split(';');
+               
+               // Now take key value pair out of this array
+               for(var i=0; i<cookiearray.length; i++) {
+                  name = cookiearray[i].split('=')[0];
+                  value = cookiearray[i].split('=')[1];
+                  document.write ("Key is : " + name + " and Value is : " + value);
+
+</script>
+	
+</head>
+
+<body>
+	<h1>Welk archetype past het beste bij je?</h1>
+	<h2>Je vorige antwoord was: <script type="text/javascript">document.write(name+""+value)</script></h2>
+	<a href="index.html"><img src="images/prev.png" width="400" height="150" alt=""/></a>
+	<a href="q3.html"><img src="images/next.png" width="400" height="150" alt=""/></a>
+</body>
+</html>
