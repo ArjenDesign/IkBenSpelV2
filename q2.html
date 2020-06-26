@@ -5,28 +5,93 @@
 <title>Vraag 2</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 	
-<script>
-	
-    var allcookies = document.cookie;
-               document.write ("All Cookies : " + allcookies );
-               
-               // Get all the cookies pairs in an array
-               cookiearray = allcookies.split(';');
-               
-               // Now take key value pair out of this array
-               for(var i=0; i<cookiearray.length; i++) {
-                  name = cookiearray[i].split('=')[0];
-                  value = cookiearray[i].split('=')[1];
-                  document.write ("Key is : " + name + " and Value is : " + value);
-
-</script>
+	 <script type = "text/javascript">
+        
+            function WriteCookie() {
+			   Answer2Result = escape(document.quiz.archetypes.value) + ";"; 
+               document.cookie = "Answer2=" + Answer2Result + "path=/";
+			   document.forms["quiz"].submit();
+            }
+			 
+			 function ShowCookie() {
+  			 alert(document.cookie);
+			 }
+			 
+      	</script>      
 	
 </head>
 
 <body>
 	<h1>Welk archetype past het beste bij je?</h1>
-	<h2>Je vorige antwoord was: <script type="text/javascript">document.write(name+""+value)</script></h2>
-	<a href="index.html"><img src="images/prev.png" width="400" height="150" alt=""/></a>
-	<a href="q3.html"><img src="images/next.png" width="400" height="150" alt=""/></a>
+	
+<form action="q3.html" name = "quiz">
+
+<label>
+  <input type="radio" name="archetypes" value="1" checked>
+  <img src="images/__grapjas.png" width="125" height="150">
+</label>
+
+<label>
+  <input type="radio" name="archetypes" value="2" checked>
+  <img src="images/__held.png" width="125" height="150">
+</label>
+
+<label>
+  <input type="radio" name="archetypes" value="3" checked>
+  <img src="images/__kind.png" width="125" height="150">
+</label>
+
+<label>
+  <input type="radio" name="archetypes" value="4" checked>
+  <img src="images/__koning.png" width="125" height="150">
+</label>
+
+<label>
+  <input type="radio" name="archetypes" value="5" checked>
+  <img src="images/__liefhebber.png" width="125" height="150">
+</label>
+
+<label>
+  <input type="radio" name="archetypes" value="6" checked>
+  <img src="images/__schepper.png" width="125" height="150">
+</label>
+		
+<label>
+  <input type="radio" name="archetypes" value="7" checked>
+  <img src="images/__tovenaar.png" width="125" height="150">
+</label>
+		
+<label>
+  <input type="radio" name="archetypes" value="8" checked>
+  <img src="images/__voeder.png" width="125" height="150">
+</label>
+		
+<label>
+  <input type="radio" name="archetypes" value="9" checked>
+  <img src="images/__vrijbuiter.png" width="125" height="150">
+</label>		
+
+<label>
+  <input type="radio" name="archetypes" value="10" checked>
+  <img src="images/__wijze.png" width="125" height="150">
+</label>
+		
+<label>
+  <input type="radio" name="archetypes" value="11" checked>
+  <img src="images/__alleman.png" width="125" height="150">
+</label>
+		
+<label>
+  <input type="radio" name="archetypes" value="12" checked>
+  <img src="images/__avonturier.png" width="125" height="150">
+</label>
+	
+<div>
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+<button type="button" onclick="ShowCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+</div>
+
+</form>
+
 </body>
 </html>

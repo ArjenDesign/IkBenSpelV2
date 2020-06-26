@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vraag 1</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+		 <script type = "text/javascript">
+        
+            function WriteCookie() {
+			   Answer4Result = escape(document.quiz.daycolor.value) + ";"; 
+               document.cookie = "Answer4=" + Answer4Result + "path=/";
+			   document.forms["quiz"].submit();
+            }
+			 
+			 function ShowCookie() {
+  			 alert(document.cookie);
+			 }
+			 
+      	</script>      
+	
+</head>
+
+<body>
+<h1>Wat voor soort goede of slechte dag heb je?</h1>
+	
+<form action="q5.html" name = "quiz">
+
+<label>
+  <input type="radio" name="daycolor" value="grass" checked>
+  <img src="images/__gras.png" width="350" height="350">
+</label>
+
+<label>
+  <input type="radio" name="daycolor" value="king" checked>
+  <img src="images/__koninglijk.png" width="350" height="350">
+</label>
+	
+<label>
+  <input type="radio" name="daycolor" value="sun" checked>
+  <img src="images/__zonnig.png" width="350" height="350">
+</label>
+
+<label>
+  <input type="radio" name="daycolor" value="fire" checked>
+  <img src="images/__vurig.png" width="350" height="350">
+</label>	
+	
+<div>
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+<button type="button" onclick="ShowCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+</div>
+
+</form>
+<img src="images/__nee.png" width="300" height="300">
+
+</body>
+</html>

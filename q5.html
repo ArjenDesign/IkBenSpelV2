@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vraag 2</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+	 <script type = "text/javascript">
+        
+            function WriteCookie() {
+			   Answer5Result = escape(document.quiz.challenges.value) + ";"; 
+               document.cookie = "Answer5=" + Answer5Result + "path=/";
+			   document.forms["quiz"].submit();
+            }
+			 
+			 function ShowCookie() {
+  			 alert(document.cookie);
+			 }
+			 
+      	</script>      
+	
+</head>
+
+<body>
+	<h1>Wat zijn jouw uitdagingen voor de toekomst? Waar wil je aan werken?</h1>
+	
+<form action="q6.html" name = "quiz">
+
+<label>
+  <input type="radio" name="challenges" value="1" checked>
+  <img src="images/__open-toegankelijk-eerlijk.png" width="160" height="125">
+</label>
+	
+<label>
+  <input type="radio" name="challenges" value="2" checked>
+  <img src="images/__bijjezelfblijven-reflecteren.png" width="160" height="125">
+</label>
+
+<label>
+  <input type="radio" name="challenges" value="3" checked>
+  <img src="images/__oordeelloos-empatisch-respectvol.png" width="160" height="125">
+</label>
+	
+<label>
+  <input type="radio" name="challenges" value="4" checked>
+  <img src="images/__bewust-wakker.png" width="160" height="125">
+</label>
+
+<label>
+  <input type="radio" name="challenges" value="5" checked>
+  <img src="images/__overgave-bescheiden.png" width="160" height="125">
+</label>
+	
+<label>
+  <input type="radio" name="challenges" value="6" checked>
+  <img src="images/__nieuwedingenproberen-moedig.png" width="160" height="125">
+</label>
+	
+<label>
+  <input type="radio" name="challenges" value="7" checked>
+  <img src="images/__leergierig-flexibel-geduldig.png" width="160" height="125">
+</label>
+	
+<label>
+  <input type="radio" name="challenges" value="8" checked>
+  <img src="images/__efficient-structuur-geordend.png" width="160" height="125">
+</label>
+
+<label>
+  <input type="radio" name="challenges" value="9" checked>
+  <img src="images/__betrokken-verbindend-hulpvaardig.png" width="160" height="125">
+</label>
+
+<label>
+  <input type="radio" name="challenges" value="10" checked>
+  <img src="images/__autonoom-zichtbaar.png" width="160" height="125">
+</label>
+
+
+	
+<div>
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+<button type="button" onclick="ShowCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+</div>
+
+</form>
+
+</body>
+</html>
