@@ -4,36 +4,38 @@
 <meta charset="utf-8">
 <title>Vraag 1</title>
 <link href="style.css" rel="stylesheet" type="text/css">
-	
-		 <script type = "text/javascript">
-        
-            function WriteCookie() {
-			   Answer3Result = escape(document.quiz.day.value) + ";"; 
-               document.cookie = "Answer3=" + Answer3Result + "path=/";
-			   document.forms["quiz"].submit();
-            }
-			 
-			 function ShowCookie() {
-  			 alert(document.cookie);
-			 }
-			 
-      	</script>      
+	   
 	
 </head>
 
 <body>
-<h1>Dit zijn de antwoorden die je hebt ingevuld:</h1>
+<h1>Dit zijn de antwoorden die je hebt ingevuld:
+			
+	<script type = "text/javascript">
+        
+           var AllAnswers = document.cookie;
+			 cookiearray = AllAnswers.split(';');
+			 for(var i=0; i<cookiearray.length; i++) 
+			{
+			  Question = cookiearray[i].split('=')[0];
+			  Answer = cookiearray[i].split('=')[1];
+			  document.write ("The question was : " + Question + " and answer is : " + Answer);
+			}	
+
+			 function ShowCookie() {
+  			 alert(document.cookie);
+			 }
+			 
+      	</script>   
+	
+</h1>
+	
 	
 <form action="q4.html" name = "quiz">
 
 <label>
   <input type="radio" name="day" value="ja" checked>
-  <img src="images/__ja.png" width="400" height="400">
-</label>
-
-<label>
-  <input type="radio" name="day" value="nee" checked>
-  <img src="images/__nee.png" width="400" height="400">
+  <img src="images/__ja.png" width="40" height="40">
 </label>
 	
 <div>
