@@ -19,8 +19,9 @@
 				{
 				  Question = cookiearray[i].split('=')[0];
 				  Answer = cookiearray[i].split('=')[1];
-				  document.write ("The question was : " + Question + " and answer is : " + Answer);
+				  document.write ("Op deze vraag : " + Question + " gaf je dit antwoord : " + Answer);
 				}
+		
 			 function ShowCookie() {
   			 alert(document.cookie);
 			 }			
@@ -39,8 +40,7 @@
 </label>
 	
 <div>
-<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
-<button type="button" onclick="ShowCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
+
 </div>
 
 </form>
