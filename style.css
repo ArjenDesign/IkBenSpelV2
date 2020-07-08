@@ -17,14 +17,14 @@ h1
 h2
 {
 	font-family: Calibri;
-	text-align:left; 
+	text-align:center; 
 	font-size: 25px; 
 }
 
 h3
 {
 	font-family: Calibri;
-	text-align:left; 
+	text-align:center; 
 	font-size: 50px; 
 }
 
@@ -54,5 +54,13 @@ h4
 /* CHECKED STYLES */
 [type=radio]:checked + img
 {
-	outline: 5px solid #000;
+	border: 6px solid blue;
+	border-radius: 50%;
+	float:none;
+}
+
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
 }

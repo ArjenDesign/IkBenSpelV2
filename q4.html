@@ -9,7 +9,7 @@
         
             function WriteCookie() {
 			   Answer4Result = escape(document.quiz.daycolor.value) + ";"; 
-               document.cookie = "Answer4=" + Answer4Result + "path=/";
+               document.cookie = "Vraag4=" + Answer4Result + "path=/";
 			   document.forms["quiz"].submit();
             }
 			 
@@ -26,29 +26,35 @@
 	
 <form action="q5.html" name = "quiz">
 
-<label>
+<table style="width: 350px;" >
+<tbody>
+<tr>
+<td><label>
   <input type="radio" name="daycolor" value="Warm Grasgroen" checked>
   <img src="images/__gras.png" width="350" height="350">
-</label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<label>
+	<h2>Warm Grasgroen: Zorgzaam en Ontspannen óf Passief en Afwachtend</h2>
+</label></td>
+<td><label>
   <input type="radio" name="daycolor" value="Helder Koningsblauw" checked>
   <img src="images/__koninglijk.png" width="350" height="350">
-</label>
-	
-<h3>&nbsp;&nbsp;&nbsp;Warm Grasgroen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Helder Koningsblauw</h3>
-	
-<label>
+	<h2>Helder Koningsblauw: Nauwkeurig en Gedetailleerd óf Besluiteloos en Argwanend</h2>
+</label></td>
+</tr>
+<tr>
+<td><label>
   <input type="radio" name="daycolor" value="Stralend Goudgeel" checked>
   <img src="images/__zonnig.png" width="350" height="350">
-</label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<label>
+	<h2>Stralend Goudgeel: Enthousiast en Expressief óf Chaotisch en Pronkerig</h2>
+</label></td>
+<td><label>
   <input type="radio" name="daycolor" value="Vurig Oranje" checked>
   <img src="images/__vurig.png" width="350" height="350">
-</label>	
-	
-<h3>Stralend Goudgeel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vurig Oranje</h3>
+	<h2>Vurig Oranje: Wilskrachtig en Vastberaden óf Agressief en Controlerend</h2>
+</label>	</td>
+</tr>
+</tbody>
+</table>
+
 	
 <div>
 <button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>

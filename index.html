@@ -9,7 +9,7 @@
         
             function WriteCookie() {
 			   Answer1Result = escape(document.quiz.hats.value) + ";"; 
-               document.cookie = "Answer1=" + Answer1Result + "path=/";
+               document.cookie = "Vraag1=" + Answer1Result + "path=/";
 			   document.forms["quiz"].submit();
             }
 			 
@@ -25,40 +25,47 @@
 <h1>Hoe stel je je vaak op in discussies?</h1>
 	
 <form action="q2.html" name = "quiz">
-
-<label>
+	
+<table style="width: 300px;">
+	<tbody>
+		<tr>
+			<td><label>
   <input type="radio" name="hats" value="green" checked>
   <img src="images/__green.png" width="300" height="225">
-</label>
-
-<label>
+				<h1>Creatief</h1>
+</label></td>
+			<td><label>
   <input type="radio" name="hats" value="blue" checked>
   <img src="images/__blue.png" width="300" height="225">
-</label>
-
-<label>
+				<h1>Beschouwend</h1>
+</label></td>
+			<td><label>
   <input type="radio" name="hats" value="yellow" checked>
   <img src="images/__yellow.png" width="300" height="225">
-</label>
-
-<h1>Creatief&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beschouwend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Positief</h1>	
-	
-<label>
+				<h1>Positief</h1>
+</label></td>
+		</tr>
+		<tr>
+			<td><label>
   <input type="radio" name="hats" value="red" checked>
   <img src="images/__red.png" width="300" height="225">
+				<h1>Op gevoel</h1>
 </label>
-
-<label>
+</td>
+			<td><label>
   <input type="radio" name="hats" value="white" checked>
   <img src="images/__white.png" width="300" height="225">
-</label>
-
-<label>
+				<h1>Feitelijk</h1>
+</label></td>
+			<td><label>
   <input type="radio" name="hats" value="black" checked>
   <img src="images/__black.png" width="300" height="225">
-</label>
-	
-<h1>Op gevoel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feitelijk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Negatief</h1>	
+				<h1>Negatief</h1>
+</label></td>
+		</tr>
+	</tbody>
+</table>	
+
 	
 <div>
 <button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>

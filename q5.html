@@ -9,7 +9,7 @@
         
             function WriteCookie() {
 			   Answer5Result = escape(document.quiz.challenges.value) + ";"; 
-               document.cookie = "Answer5=" + Answer5Result + "path=/";
+               document.cookie = "Vraag5=" + Answer5Result + "path=/";
 			   document.forms["quiz"].submit();
             }
 			 
@@ -25,60 +25,69 @@
 	<h1>Wat zijn jouw uitdagingen voor de toekomst? Waar wil je aan werken?</h1>
 	
 <form action="q6.html" name = "quiz">
-
-<label>
+	
+	<table style="width: 160px;" >
+<tbody>
+<tr>
+<td><label>
   <input type="radio" name="challenges" value="Open, Toegankelijk, Eerlijk" checked>
   <img src="images/__open-toegankelijk-eerlijk.png" width="160" height="125">
-</label>
-	
-<label>
+	<h2>Open, Toegankelijk, Eerlijk</h2>
+</label></td>
+<td><label>
   <input type="radio" name="challenges" value="Bij jezelf blijven, Reflecteren" checked>
   <img src="images/__bijjezelfblijven-reflecteren.png" width="160" height="125">
-</label>
-
-<label>
+	<h2>Bij jezelf blijven, Reflecteren</h2>
+</label></td>
+<td><label>
   <input type="radio" name="challenges" value="Oordeelloos, Empathisch" checked>
   <img src="images/__oordeelloos-empatisch-respectvol.png" width="160" height="125">
-</label>
-	
-<label>
+	<h2>Oordeelloos, Empathisch</h2>
+</label></td>
+<td><label>
   <input type="radio" name="challenges" value="Bewust van anderen" checked>
   <img src="images/__bewust-wakker.png" width="160" height="125">
+	<h2>Bewust van anderen</h2>
 </label>
-
-<label>
+</td>
+<td><label>
   <input type="radio" name="challenges" value="Overgave, Bescheiden, Bereidwillig" checked>
   <img src="images/__overgave-bescheiden.png" width="160" height="125">
-</label>
-	
-	<h4>&nbsp;&nbsp;&nbsp;Open, Toegankelijk, Eerlijk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bij jezelf blijven, Reflecteren &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Oordeelloos, Empathisch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bewust van anderen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overgave, Bescheiden, Bereidwillig</h4>
-	
-<label>
+	<h2>Overgave, Bescheiden, Bereidwillig</h2>
+</label></td>
+</tr>
+<tr>
+<td><label>
   <input type="radio" name="challenges" value="Nieuwe dingen proberen" checked>
   <img src="images/__nieuwedingenproberen-moedig.png" width="160" height="125">
-</label>
-	
-<label>
+	<h2>Nieuwe dingen proberen</h2>
+</label></td>
+<td><label>
   <input type="radio" name="challenges" value="Leergierig, Flexibel, Geduldig" checked>
   <img src="images/__leergierig-flexibel-geduldig.png" width="160" height="125">
-</label>
-	
-<label>
+	<h2>Leergierig, Flexibel, Geduldig</h2>
+</label></td>
+<td><label>
   <input type="radio" name="challenges" value="Efficiënt, Geördend" checked>
   <img src="images/__efficient-structuur-geordend.png" width="160" height="125">
-</label>
-
-<label>
+	<h2>Efficïent, Gestructureerd, Geordend</h2>
+</label></td>
+<td><label>
   <input type="radio" name="challenges" value="Betrokken, Verbindend" checked>
   <img src="images/__betrokken-verbindend-hulpvaardig.png" width="160" height="125">
-</label>
-
+	<h2>Betrokken, Verbindend</h2>
+</label></td>
+<td>	
 <label>
   <input type="radio" name="challenges" value="Autonoom, Zichtbaar zijn" checked>
   <img src="images/__autonoom-zichtbaar.png" width="160" height="125">
-</label>
+	<h2>Autonoom, Zichtbaar zijn</h2>
+</label></td>
+</tr>
+</tbody>
+</table>
 
-	<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nieuwe dingen proberen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leergierig, Flexibel, Geduldig &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Efficiënt, Geördend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Betrokken, Verbindend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autonoom, Zichtbaar zijn</h4>
+
 	
 <div>
 <button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
