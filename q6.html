@@ -19,7 +19,10 @@
 				{
 				  Question = cookiearray[i].split('=')[0];
 				  Answer = cookiearray[i].split('=')[1];
-				  document.write ("Op deze vraag : " + Question + " gaf je dit antwoord : " + Answer + "<div>");
+					var QuestionB = decodeURIComponent(Question);
+					var AnswerB = decodeURIComponent(Answer);
+				
+				  document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");
 				}
 		
 			 function ShowCookie() {
