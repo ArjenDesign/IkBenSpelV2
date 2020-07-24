@@ -20,9 +20,14 @@
 				  Question = cookiearray[i].split('=')[0];
 				  Answer = cookiearray[i].split('=')[1];
 					var QuestionB = decodeURIComponent(Question);
-					var AnswerB = decodeURIComponent(Answer);
-				
+					var AnswerB = decodeURIComponent(Answer);				
 				  document.write ("Op deze vraag : " + QuestionB + " gaf je dit antwoord : " + AnswerB + "<div>");
+					if(QuestionB=="Vraag3"){
+						 alert("vraag3");
+						if(AnswerB=="Ja"){
+							alert("Ja")
+						}
+					}
 				}
 		
 			 function ShowCookie() {
