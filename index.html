@@ -9,14 +9,10 @@
         
             function WriteCookie() {
 			   Answer1Result = escape(document.quiz.hats.value) + ";"; 
-               document.cookie = "Vraag1=" + Answer1Result + "path=/";
+               document.cookie = "ArjQ1=" + Answer1Result + "path=/";
 			   document.forms["quiz"].submit();
             }
-			 
-			 function ShowCookie() {
-  			 alert(document.cookie);
-			 }
-			 
+
       	</script>      
 	
 </head>
@@ -30,46 +26,45 @@
 	<tbody>
 		<tr>
 			<td><label>
-  <input type="radio" name="hats" value="Creatief" checked>
+  <input type="radio" name="hats" value="1" checked>
   <img src="images/__green.png" width="300" height="225">
 				<h1>Creatief</h1>
 </label></td>
 			<td><label>
-  <input type="radio" name="hats" value="Beschouwend" checked>
+  <input type="radio" name="hats" value="2" checked>
   <img src="images/__blue.png" width="300" height="225">
 				<h1>Beschouwend</h1>
 </label></td>
 			<td><label>
-  <input type="radio" name="hats" value="Positief" checked>
+  <input type="radio" name="hats" value="3" checked>
   <img src="images/__yellow.png" width="300" height="225">
 				<h1>Positief</h1>
 </label></td>
 		</tr>
 		<tr>
 			<td><label>
-  <input type="radio" name="hats" value="Op_gevoel" checked>
+  <input type="radio" name="hats" value="4" checked>
   <img src="images/__red.png" width="300" height="225">
-				<h1>Op gevoel</h1>
+  <h1>Op gevoel</h1>
 </label>
 </td>
 			<td><label>
-  <input type="radio" name="hats" value="Feitelijk" checked>
+  <input type="radio" name="hats" value="5" checked>
   <img src="images/__white.png" width="300" height="225">
 				<h1>Feitelijk</h1>
 </label></td>
 			<td><label>
-  <input type="radio" name="hats" value="Negatief" checked>
+  <input type="radio" name="hats" value="6" checked>
   <img src="images/__black.png" width="300" height="225">
 				<h1>Negatief</h1>
 </label></td>
 		</tr>
 	</tbody>
 </table>	
-
 	
-<div>
-<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
-</div>
+
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="100" alt=""/></button>
+
 
 </form>
 

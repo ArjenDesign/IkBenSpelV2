@@ -5,6 +5,18 @@ body
 {
 	width: 1000px;
 	margin: 0 auto;
+	background-color: #9FD7AA;
+}
+
+div
+{
+
+}
+
+.button 
+{
+	color: #9FD7AA;
+	background-color: #9FD7AA;
 }
 
 h1
@@ -35,6 +47,11 @@ h4
 	font-size: 14px; 
 }
 
+h5
+{
+background-color: #9FD7AA;	
+}
+
 
 /* HIDE RADIO */
 [type=radio]
@@ -44,6 +61,14 @@ h4
 	width: 0;
 	height: 0;
 }
+
+button 
+{
+  color: #9FD7AA;
+  background-color: #9FD7AA;
+	border: none;
+}
+
 
 img:hover {
   opacity: 0.5;

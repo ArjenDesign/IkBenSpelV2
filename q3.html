@@ -2,20 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Vraag 1</title>
+<title>Vraag 3</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 	
 		 <script type = "text/javascript">
         
             function WriteCookie() {
 			   Answer3Result = escape(document.quiz.day.value) + ";"; 
-               document.cookie = "Vraag3=" + Answer3Result + "path=/";
+               document.cookie = "ArjQ3=" + Answer3Result + "path=/";
 			   document.forms["quiz"].submit();
             }
-			 
-			 function ShowCookie() {
-  			 alert(document.cookie);
-			 }
+
 			 
       	</script>      
 	
@@ -27,18 +24,19 @@
 <form action="q4.html" name = "quiz">
 
 <label>
-  <input type="radio" name="day" value="Ja" checked>
+  <input type="radio" name="day" value="1" checked>
   <img src="images/__ja.png" width="400" height="400">
 </label>
 
 <label>
-  <input type="radio" name="day" value="Nee" checked>
+  <input type="radio" name="day" value="2" checked>
   <img src="images/__nee.png" width="400" height="400">
 </label>
 	
 <div>
-<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="150" alt=""/></button>
-<a href="q2.html"><img src="images/prev.png" width="400" height="150" alt=""></a>
+
+<a href="q2.html"><img src="images/prev.png" width="400" height="100" alt=""></a>
+<button type="button" onclick="WriteCookie()"><img src="images/next.png" width="400" height="100" alt=""/></button>
 </div>
 
 </form>
